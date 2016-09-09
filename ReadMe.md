@@ -25,8 +25,8 @@
 * For local execution set flag `executeLocal=Y` in `src/test/resources/uat.properties`
 
 #### Run the below mvn command to start the test execution
-* To run the Regression test on Production (Chrome browser)
- `mvn clean test -Denvironment=uat -Dbrowser=chrome -Dcucumber.options="--tags @RegressionTests" exec:java`
+* To run the Regression test Or Smoke Test (using tags) (Chrome browser)`-Dcucumber.options="--tags @RegressionTests"` :
+* `mvn clean test -Denvironment=uat -Dbrowser=chrome -Dcucumber.options="--tags @RegressionTests" exec:java`
 
 ### With HTML Report
 * Open terminal
